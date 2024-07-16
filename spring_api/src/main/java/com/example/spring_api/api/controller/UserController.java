@@ -23,7 +23,7 @@ public class UserController {
     }
 
     //I acknowledge this is not the best way to do this.  Returning an entity with a network code...
-    @GetMapping("path")
+    @GetMapping("/user")
     public User getUser(@RequestParam Integer id)
     {
         Optional<User> user = userService.getUser(id);
