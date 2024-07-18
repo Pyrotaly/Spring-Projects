@@ -20,12 +20,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 // import com.mongodb.assertions.Assertions;
 import org.junit.jupiter.api.Assertions;
 
-
-
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
 
 @SpringBootTest
 @Testcontainers
@@ -71,5 +68,4 @@ class ProductServiceApplicationTests {
 			.price(BigDecimal.valueOf(9999))
 			.build();
 	}
-
 }
